@@ -1,14 +1,14 @@
 class Lazytf < Formula
   desc "Terminal UI for Terraform workflows"
   homepage "https://github.com/jaxsonsuth/lazytf"
-  url "https://github.com/jaxsonsuth/lazytf/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "171ef9c05bb6fe7145208d6901c71278099c0fc8311c0565a9832e9abe88832b"
-  version "0.1.0"
+  url "https://github.com/jaxsonsuth/lazytf/releases/download/v0.1.1/lazytf-aarch64-apple-darwin.tar.gz"
+  sha256 "baa0eff7360e7b990a5fee08bdfc3c4e6907fde41fa328280d37d7782ff887d4"
+  version "0.1.1"
 
-  depends_on "rust" => :build
+  depends_on arch: :arm64
 
   def install
-    system "cargo", "install", *std_cargo_args(path: ".")
+    bin.install "lazytf"
   end
 
   test do

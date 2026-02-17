@@ -1,9 +1,9 @@
 class Lazytf < Formula
   desc "Terminal UI for Terraform workflows"
   homepage "https://github.com/jaxsonsuth/lazytf"
-  url "https://github.com/jaxsonsuth/lazytf/releases/download/v0.1.2/lazytf-aarch64-apple-darwin.tar.gz"
-  sha256 "6efc974c88a1e057cb157f923d8cc005d0f0a1e3cc5810dc0756b98695cbe75e"
-  version "0.1.2"
+  url "https://github.com/jaxsonsuth/lazytf/releases/download/v0.1.3/lazytf-aarch64-apple-darwin.tar.gz"
+  sha256 "4072db76c43de2672e9c44aa8aad47b3c1e0b93bd3e2119799994f64403ae072"
+  version "0.1.3"
 
   depends_on arch: :arm64
 
